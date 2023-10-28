@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+</head>
+<body>
+    <form action="onsubmit.html">
+
+        <label for="name" fontsize="20">Name: </label>
+        <input type="text" required pattern="[a-zA-Z]{3-12}">
+        <br><br><br><br>
+        <label for="num" fontsize="20">Number: </label>
+        <input type="number" required pattern="[6-9]{0-9}">
+        <br><br><br><br>
+        <label for="dob" fontsize="20" required>DOB: </label>
+        <input type="date">
+        <br><br><br><br>
+        <label for="gender" fontsize="20" required>Gender: </label>
+        <input type="radio" id="male" name="fav_language" value="male">
+        <label for="male" fontsize="20" required>Male</label>
+        <input type="radio" id="female" name="fav_language" value="female">
+        <label for="female" fontsize="20" required>Female</label><br>
+       <br><br><br><br>
+        <label for=" course" fontsize="20" required>Course: </label>
+        <select  name="course" id="course">
+            <option value="volvo" fontsize="20" required>Full Stack Java Development</option>
+            <option value="saab" fontsize="20" required>Full Stack Python Development</option>
+        </select>
+        <br><br><br><br>
+        <input type="submit" value="Submit Form">
+    </form>
+</body>
+</html>
